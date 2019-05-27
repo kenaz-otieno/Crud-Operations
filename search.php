@@ -1,6 +1,4 @@
-<?php 
-
-if(isset($_POST['submit'])){ 
+<?php
 if(preg_match("/^[  a-zA-Z]+/", $_POST['name'])){ 
 $name=$_POST['name']; 
 $link = mysqli_connect("localhost", "root", "", "myData");
@@ -20,6 +18,5 @@ echo "</ul>";
 } 
 else{ 
 echo  "<p>Please enter a search query</p>"; 
-} 
-} 
+}
 ?> 
