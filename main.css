@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    box-sizing: border-box;
+    background-color: skyblue;
+    text-align: center;
+}
+.topnav {
+    width: 100%;
+    height: 80px;
+    background-color: skyblue;
+    box-shadow: 0px 2px 4px gray;
+}
+ul{width: 1000px;height: 80px;float: right;}
+ul>li {width: 190px;list-style: none;float: left;border-right: 1px solid gray;border-left: 1px solid gray;}
+li>a {
+    display: block;color: white;line-height: 80px;text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 20px;text-decoration: none;}
+li>a:hover, li a:focus {
+    background:skyblue;
+    color: brown;  
+}
+#logo{width: 200px; height: 80px; float: left; padding-left: 40px;}
+@media screen and (max-width:1260px){
+    ul{width: 880px;}
+    ul>li{ width:150px;}
+    #logo>img{width: 150px; height: 80px;}
+}
+@media screen and (max-width: 1060px){
+    .topnav{width: 100%; height: 60px;position: relative;top:80px;}
+    ul{width: 100%;height: 60px;float: right;}
+    ul>li{width: 18%;}
+    li>a {line-height:60px;font-size: 16px;}
+#logo{width: 200px;height: 60px;float: left;padding-left: 40px;position: absolute;top:0px;}
+}
+@media screen and (max-width: 480px){
+    .topnav{width: 100%; height: 60px;position: relative;top:80px;}
+    ul{width: 100%;height: 60px;float: right;}
+    ul>li{width: 100%;list-style: none;float:none; border-bottom:1px solid skyblue;}
+    li>a {line-height:60px;font-size: 16px;}
+#logo{width: 200px;height: 60px;float: left;padding-left: 40px;position: absolute;top:0px;}
+}
+form {box-sizing: border-box}
+input[type=text],input[type=email],input[type=tel]{
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+select {
+  width: 42%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=date]{
+    width: 40%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+select:focus, input[type=date]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
